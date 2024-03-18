@@ -7,7 +7,6 @@
 </head>
 <body>
         <form action="cadastrar.php" method="post">
-        ID <input type="number" name="id_usuario"><br>
         email <input type="email" name="email"><br>
         Senha <input type="password" name="senha"><br>
             <input type="submit" value="cadastrar"><br>
