@@ -2,5 +2,5 @@
 Meu primeiro repositório no GitHub
 meu primeiro commit
 
-Me chamo Pedro Fernandes Machado. Sou aluno do Iffar Uruguaiana.
+Me chamo Luciano Maia. Sou aluno do Iffar Uruguaiana.
 
