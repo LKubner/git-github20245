@@ -1,6 +1,6 @@
 <?php
 $id_usuario = $_GET['id_usuario'];
-require_once "conexao.php";
+require_once "conecta.php";
 $conexao = conectar();
 $sql = "SELECT * FROM usuario WHERE id_usuario = $id_usuario";
 $result = mysqli_query($conexao, $sql);
