@@ -1,3 +1,15 @@
+<?php
+require_once "conexao.php";
+$conexao = conectar();
+$sql = "SELECT * FROM usuario";
+$result = mysqli_query($conexao, $sql);
+if ($result) {
+    $usuarios = mysqli_fetch_all($result, MYSQLI_ASSOC);
+} else {
+    echo mysqli_errno($conexao) . ": " . mysqli_error($conexao);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
