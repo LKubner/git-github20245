@@ -1,5 +1,4 @@
 <?php
-
 function conectar()
 {
     $conexao = mysqli_connect("localhost", "root", "", "git");
