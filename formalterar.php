@@ -1,3 +1,19 @@
+<?php
+$id_usuario = $_GET['id_usuario'];
+require_once "conexao.php";
+$conexao = conectar();
+$sql = "SELECT * FROM usuario WHERE id_usuario = $id_usuario";
+$result = mysqli_query($conexao, $sql);
+
+if ($result) {
+    $usuario = mysqli_fetch_assoc($result);
+} else {
+    echo mysqli_errno($conexao) . ": " . mysqli_error($conexao);
+    die();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
