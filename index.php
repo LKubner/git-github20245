@@ -24,22 +24,22 @@ if ($result) {
         <tr>
             <th>Id</th>
             <th>Email</th>
-            <th>Opções</th>
+            <th colspan="2"> Opções</th>
 </tr>
 </thead>
 <tbody>
-    <tr>
-        <td>1</td>
-        <td>Thiago</td>
-        <td>Alterar</td>
-        <td>Excluir</td>
-</tr>
-</tbody>
-</table>
-
-   Óla mundo
-   <form method="post">
-
+<?php
+            foreach ($usuarios as $usuario) {
+                echo "<tr><td>" . $usuario['id_usuario'] . "</td>";
+                echo "<td>" . $usuario['email'] . "</td>";
+                echo '<td><a href="form-alterar.php?id_usuario=' .
+                    $usuario['id_usuario'] . '">Alterar</td>';
+                echo '<td><a href="excluir.php?id_usuario=' .
+                    $usuario['id_usuario'] . '">Excluir</td>';
+            }
+            ?>
+        </tbody>
+    </table>
 </body>
-</form>
+
 </html>
